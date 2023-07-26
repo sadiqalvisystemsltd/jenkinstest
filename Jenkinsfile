@@ -1,6 +1,4 @@
- pipeline {
-	agent any
-	stages {
+node('unixnode') {
 		stage('Build') {
 			steps {
 				echo 'hello'
@@ -21,5 +19,4 @@
 				echo 'world'
 			}
 		}
-	}
  }
