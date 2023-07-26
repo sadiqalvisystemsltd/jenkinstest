@@ -11,6 +11,11 @@
 				echo 'migration'
 			}
 		}
+		stage('envsetup') {
+			steps {
+				echo 'envsetup'
+			}
+		}
 		stage('Deploy') {
 			steps {
 				echo 'world'
