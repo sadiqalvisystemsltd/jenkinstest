@@ -1,3 +1,4 @@
+ node{
  pipeline {
 	agent any
 	stages {
@@ -16,10 +17,16 @@
 				echo 'envsetup'
 			}
 		}
+		stage('nodeadded') {
+			steps {
+				echo 'node added!'
+			}
+		}
 		stage('Deploy') {
 			steps {
 				echo 'world'
 			}
 		}
 	}
+ }
  }
