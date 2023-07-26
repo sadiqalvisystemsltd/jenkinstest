@@ -1,4 +1,6 @@
- node{
+ pipeline {
+	agent any
+	stages {
 		stage('Build') {
 			steps {
 				echo 'hello'
@@ -14,14 +16,10 @@
 				echo 'envsetup'
 			}
 		}
-		stage('nodeadded') {
-			steps {
-				echo 'node added!'
-			}
-		}
 		stage('Deploy') {
 			steps {
 				echo 'world'
 			}
 		}
+	}
  }
