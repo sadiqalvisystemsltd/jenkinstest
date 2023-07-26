@@ -1,4 +1,4 @@
-node('unixnode') {
+node('linux') {
 		stage('Build') {
 			steps {
 				echo 'hello'
