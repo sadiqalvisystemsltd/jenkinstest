@@ -1,27 +1,17 @@
 node{
 		stage('Build') {
-			steps {
-				echo 'hello'
-			}
+			echo 'hello'
 		}
 		stage('Migrations') {
-			steps {
-				echo 'migration'
-			}
+			echo 'migration'
 		}
 		stage('envsetup') {
-			steps {
-				echo 'envsetup'
-			}
+			echo 'envsetup'
 		}
 		stage('newnode') {
-			steps {
 				echo 'with node'
-			}
 		}
 		stage('Deploy') {
-			steps {
 				echo 'world'
-			}
 		}
  }
