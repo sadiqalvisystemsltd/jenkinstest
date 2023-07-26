@@ -14,6 +14,11 @@ node('unixnode') {
 				echo 'envsetup'
 			}
 		}
+		stage('newnode') {
+			steps {
+				echo 'with node'
+			}
+		}
 		stage('Deploy') {
 			steps {
 				echo 'world'
