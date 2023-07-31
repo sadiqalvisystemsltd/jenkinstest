@@ -11,6 +11,9 @@ node{
 		stage('newnode') {
 				echo 'with node'
 		}
+		stage('newtestnode') {
+			echo 'new test node'
+		}
 		stage('Deploy') {
 				echo 'world'
 		}
