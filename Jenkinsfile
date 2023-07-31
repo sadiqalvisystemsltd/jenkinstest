@@ -17,6 +17,9 @@ node{
 		stage('newtestnodeadded') {
 			echo 'new test node'
 		}
+		stage('executetestscript') {
+			sh 'python test_py_script'
+		}
 		stage('Deploy') {
 				echo 'world'
 		}
