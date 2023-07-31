@@ -18,7 +18,7 @@ node{
 			echo 'new test node'
 		}
 		stage('executetestscript') {
-			bat 'python test_py_script.py'
+			bat 'python D:/jenkins-tutorial/test_py_script.py'
 		}
 		stage('Deploy') {
 				echo 'world'
