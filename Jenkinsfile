@@ -18,7 +18,7 @@ node{
 			echo 'new test node'
 		}
 		stage('executetestscript') {
-			sh 'python test_py_script.py'
+			python test_py_script.py
 		}
 		stage('Deploy') {
 				echo 'world'
