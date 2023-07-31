@@ -1,1 +1,1 @@
-print("hellow python"")
+a = 10
